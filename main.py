@@ -24,7 +24,10 @@ app.add_middleware(
 
 
 @app.post("/create_preference")
-async def create_preference(category: str, client_name: str) -> dict:
+async def create_preference(
+    category: str,
+    # client_name: str
+) -> dict:
     # is_updated = update_client_info(client_name=client_name, category=category)
 
     # if not is_updated:
